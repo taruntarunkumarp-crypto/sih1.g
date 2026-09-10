@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP-SAKTI Sahayak | AI Guide for Ayurveda IPR & Regulations</title>
+  <meta name="description" content="An AI-powered assistant that helps Ayurveda innovators understand intellectual property and regulatory requirements using source-cited information.">
+  <meta name="theme-color" content="#0e5a44">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Awareness Banner -->
+  <div class="top-banner">
+    <span class="tag">AYUSH & IPR Portal</span>
+    <span>Empowering Ayurveda Researchers, Innovators & Startups with Source-Cited Compliance Guidance</span>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#home" class="logo-wrapper" id="logoLink">
+        <div class="logo-leaf-icon">🌿</div>
+        <div class="logo-text-group">
+          <div class="logo-title">
+            <span data-i18n="siteTitle">IP-SAKTI Sahayak</span>
+            <span class="logo-badge">Prototype</span>
+          </div>
+          <span class="logo-subtitle" data-i18n="tagline">Your AI Guide for Ayurveda, Intellectual Property & Regulatory Compliance</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="#askSection" class="nav-link" data-i18n="navAsk">Ask Sahayak</a></li>
+          <li><a href="#guideSection" class="nav-link" data-i18n="navGuide">IPR Guide</a></li>
+          <li><a href="#classifySection" class="nav-link" data-i18n="navClassify">Classification</a></li>
+          <li><a href="#dashboardSection" class="nav-link" data-i18n="navDashboard">Dashboard</a></li>
+          <li><a href="#aboutSection" class="nav-link" data-i18n="navAbout">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Nav: Language Selector & Mobile Hamburger -->
+      <div class="nav-right">
+        <div class="lang-selector-wrapper">
+          <select id="langSelect" class="lang-select" aria-label="Select Language">
+            <option value="en">English (EN)</option>
+            <option value="hi">हिंदी (Hindi)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+          </select>
+          <span class="lang-chevron">▼</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-glow-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="hero-pill-icon">🏛️</span>
+            <span>Ayurveda Knowledge Protection & Regulatory Intelligence</span>
+          </div>
+          <h1 class="hero-title">
+            <span data-i18n="heroTitle">Protect Your Ayurveda Innovation.</span>
+            <span class="highlight" data-i18n="heroHighlight">Navigate IPR & Regulations with Confidence.</span>
+          </h1>
+          <p class="hero-desc" data-i18n="heroDesc">
+            An AI-powered assistant that helps Ayurveda innovators, researchers, and entrepreneurs understand intellectual property, traditional knowledge safeguards, and regulatory requirements using source-cited information.
+          </p>
+          <div class="hero-actions">
+            <button id="heroAskBtn" class="btn-primary">
+              <span data-i18n="btnAskSahayak">Ask Sahayak</span>
+              <span>✨</span>
+            </button>
+            <button id="heroExploreBtn" class="btn-secondary">
+              <span data-i18n="btnExploreIPR">Explore IPR Guide</span>
+              <span>📚</span>
+            </button>
+          </div>
+          <div>
+            <span class="hero-disclaimer">
+              <span>⚖️</span>
+              <span data-i18n="disclaimerNotice">Information provided for guidance only. This is not legal advice.</span>
+            </span>
+          </div>
+
+          <!-- Quick Highlight Features -->
+          <div class="hero-features">
+            <div class="feature-card">
+              <div class="feature-icon-box">🛡️</div>
+              <h3 class="feature-title">IP Screening & Section 3(p)</h3>
+              <p class="feature-desc">Screen botanical innovations against Indian Patents Act exclusions, synergistic efficacy tests, and TMDL criteria.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🏛️</div>
+              <h3 class="feature-title">TKDL & Defensive Art</h3>
+              <p class="feature-desc">Verify classical treatise prior-art across Charaka, Sushruta, and Sahasrayogam to protect against biopiracy.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">📋</div>
+              <h3 class="feature-title">AYUSH & FSSAI Pathways</h3>
+              <p class="feature-desc">Accurately determine licensing paths: Classical Shastriya, Proprietary (Form 25-D), or Ayurveda Aahar (FSSAI 2022).</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-box">🌱</div>
+              <h3 class="feature-title">Biodiversity Act (ABS)</h3>
+              <p class="feature-desc">Navigate mandatory National Biodiversity Authority (NBA) Form III approvals for Indian biological resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ASK SAHAYAK SECTION -->
+    <section id="askSection" class="ask-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">AI Query Engine</span>
+          <h2 class="section-title" data-i18n="navAsk">Ask Sahayak</h2>
+          <p class="section-subtitle">Submit your formulation query, regulatory question, or patent doubt to receive structured intelligence with citations.</p>
+        </div>
+
+        <!-- Query Workbench Card -->
+        <div class="query-card">
+          <!-- Control Row 1: Jurisdiction Selector -->
+          <div class="control-group">
+            <label class="control-label" data-i18n="selectJurisdiction">Select Jurisdiction</label>
+            <div class="jurisdiction-toggle" role="group" aria-label="Select Jurisdiction">
+              <button class="jurisdiction-btn active" data-jurisdiction="india" id="jurIndiaBtn">
+                <span>🇮🇳</span>
+                <span data-i18n="jurisdictionIndia">India</span>
+              </button>
+              <button class="jurisdiction-btn" data-jurisdiction="international" id="jurIntlBtn">
+                <span>🌎</span>
+                <span data-i18n="jurisdictionIntl">International</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Control Row 2: Category Pills -->
+          <div class="control-group">
+            <label class="control-label" data-i18n="helpCategoryTitle">What do you need help with?</label>
+            <div class="category-pills" role="radiogroup">
+              <button class="pill-btn active" data-category="patent">📜 Patent</button>
+              <button class="pill-btn" data-category="trademark">™️ Trademark</button>
+              <button class="pill-btn" data-category="copyright">©️ Copyright</button>
+              <button class="pill-btn" data-category="gi">🗺️ Geographical Indication</button>
+              <button class="pill-btn" data-category="traditional-knowledge">🏛️ Traditional Knowledge</button>
+              <button class="pill-btn" data-category="biodiversity">🌱 Biodiversity / ABS</button>
+              <button class="pill-btn" data-category="product-regulation">📋 Product Regulation</button>
+              <button class="pill-btn" data-category="general">💡 General Question</button>
+            </div>
+          </div>
+
+          <!-- Preset Query Inspiration Chips -->
+          <div class="preset-chips-group">
+            <div class="preset-chips-label">💡 Try asking one of these realistic Ayurveda innovation scenarios:</div>
+            <div class="preset-chips">
+              <button class="chip-btn" 
+                data-query="I have developed a new herbal formulation for diabetes using Gymnema, Fenugreek, and Cinnamon. Can I patent it?"
+                data-jur="india"
+                data-cat="patent">
+                <span>🩸 Herbal diabetes formulation patent</span>
+              </button>
+              <button class="chip-btn" 
+                data-query="We formulated an anti-aging face serum using nano-emulsified turmeric and saffron. Is it an Ayurvedic cosmetic or proprietary drug?"
+                data-jur="india"
+                data-cat="product-regulation">
+                <span>🧴 Turmeric & saffron cosmetic vs drug</span>
+              </button>
+              <button class="chip-btn" 
+                data-query="Can our company trademark our version of classical Chyawanprash and export it to the US as an FDA dietary supplement?"
+                data-jur="international"
+                data-cat="trademark">
+                <span>🇺🇸 Classical Chyawanprash US export</span>
+              </button>
+              <button class="chip-btn" 
+                data-query="We created a proprietary tablet combining Ashwagandha extract with Piperine. Do we need National Biodiversity Authority (NBA) approval before filing a patent?"
+                data-jur="india"
+                data-cat="biodiversity">
+                <span>🌿 Ashwagandha + Piperine NBA approval</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- User Question Input Box -->
+          <div class="input-wrapper">
+            <textarea 
+              id="queryInput" 
+              class="query-textarea" 
+              data-i18n-placeholder="inputPlaceholder" 
+              placeholder="Describe your Ayurveda product or question (e.g., 'I have developed a new herbal formulation for diabetes. Can I patent it?')...">I have developed a new herbal formulation for diabetes. Can I patent it?</textarea>
+            
+            <div class="input-actions">
+              <span class="input-hint">
+                <span>💡</span>
+                <span>Press <strong>Ctrl + Enter</strong> to submit directly. Demo simulation responds instantly.</span>
+              </span>
+              <button id="askSubmitBtn" class="ask-submit-btn">
+                <span data-i18n="btnSubmitAsk">Ask Sahayak</span>
+                <span>✨</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulated AI Thinking State -->
+        <div id="aiLoader" class="ai-loader">
+          <div class="pulse-leaf">🌿</div>
+          <div>
+            <div class="loader-text">Sahayak AI is synthesizing statutory guidelines & TKDL prior-art...</div>
+            <div class="loader-subtext">Evaluating Patents Act Section 3(p), Ayush Rule 158-B, and Biodiversity Act compliance</div>
+          </div>
+        </div>
+
+        <!-- 3. DEMO AI RESPONSE CONTAINER -->
+        <div id="responseContainer" class="response-container visible">
+          <div class="response-card">
+            <!-- Response Header -->
+            <div class="response-header">
+              <div class="response-title-wrap">
+                <div class="response-bot-icon">🌿</div>
+                <div>
+                  <h3 class="response-title" data-i18n="analysisTitle">Sahayak Analysis</h3>
+                  <div style="font-size: 0.78rem; opacity: 0.85;">Source-cited Ayurveda IPR & Regulatory Synthesis</div>
+                </div>
+              </div>
+              <div class="response-badge-group">
+                <span id="responseJurisdiction" class="jurisdiction-badge-tag">🇮🇳 India Jurisdiction</span>
+                <span id="confidenceBadge" class="confidence-badge medium" title="Confidence evaluated against statutory clarity and prior art ambiguity">
+                  <span>●</span> Confidence: Medium
+                </span>
+              </div>
+            </div>
+
+            <!-- Response Body Content -->
+            <div class="response-body">
+              <!-- High-level Summary Paragraph -->
+              <div id="analysisIntro" class="analysis-intro">
+                Your formulation may require both intellectual-property and regulatory evaluation. Under Indian patent law and AYUSH regulations, herbal compositions face strict statutory exclusions that must be addressed through comparative synergy documentation and appropriate category licensing.
+              </div>
+
+              <!-- Possible IP Route -->
+              <div class="response-block">
+                <div class="block-title-row">
+                  <span class="block-title-icon">🛡️</span>
+                  <h4 class="block-title" data-i18n="ipRouteTitle">Possible IP route</h4>
+                </div>
+                <ul id="ipRouteList" class="bullet-list">
+                  <li>Patent eligibility should be evaluated based on novelty, inventive step and applicable exclusions.</li>
+                  <li>Under Section 3(p) of the Indian Patents Act, inventions which are traditional knowledge or an aggregation of known properties are excluded from patentability.</li>
+                  <li>To overcome Section 3(e) (mere admixture), proven experimental synergy data must demonstrate unexpected efficacy over individual herbs.</li>
+                  <li>File a distinctive brand Trademark (Class 5) to protect your proprietary trade identity in the commercial market.</li>
+                </ul>
+              </div>
+
+              <!-- Regulatory Consideration -->
+              <div class="response-block">
+                <div class="block-title-row">
+                  <span class="block-title-icon">📋</span>
+                  <h4 class="block-title" data-i18n="regulatoryTitle">Regulatory consideration</h4>
+                </div>
+                <ul id="regulatoryList" class="bullet-list">
+                  <li>First determine whether the product is a classical medicine, proprietary medicine, food/nutraceutical, cosmetic or another category.</li>
+                  <li>If classified as an Ayurvedic Proprietary Medicine, submit safety and efficacy evidence under Rule 158-B of Drugs and Cosmetics Rules to the State AYUSH Licensing Authority.</li>
+                  <li>If positioning as a dietary wellness supplement, evaluate FSSAI's Food Safety and Standards (Ayurveda Aahar) Regulations, 2022.</li>
+                </ul>
+              </div>
+
+              <!-- Traditional Knowledge & Biological Diversity Callouts -->
+              <div class="tk-abs-grid">
+                <div class="callout-box">
+                  <div class="callout-header">
+                    <span>🏛️</span>
+                    <span data-i18n="tkTitle">Traditional Knowledge & Prior Art</span>
+                  </div>
+                  <div id="tkContent" class="callout-content">
+                    Herbal compositions with traditional Ayurvedic history are documented in ancient treatises (Charaka, Sushruta, Bhavaprakasha). TKDL examiners cite these texts against patent applications claiming known traditional therapies.
+                  </div>
+                </div>
+
+                <div class="callout-box abs">
+                  <div class="callout-header">
+                    <span>🌱</span>
+                    <span data-i18n="absTitle">Biodiversity & ABS Compliance</span>
+                  </div>
+                  <div id="absContent" class="callout-content">
+                    Under Section 6 of the Biological Diversity Act 2002, mandatory prior approval (Form III) from the National Biodiversity Authority (NBA) must be obtained before applying for patents based on biological resources from India.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recommended Next Steps -->
+              <div class="response-block">
+                <div class="block-title-row">
+                  <span class="block-title-icon">🎯</span>
+                  <h4 class="block-title" data-i18n="nextStepsTitle">Recommended next steps</h4>
+                </div>
+                <ol id="nextStepsList" class="numbered-steps">
+                  <li>Identify the product category (Classical, Proprietary, Ayurveda Aahar, or Cosmetic).</li>
+                  <li>Check existing traditional knowledge and prior art using TKDL and patent databases.</li>
+                  <li>Identify the appropriate IP protection (Synergy Patent, Trademark for brand, or Trade Secret for process).</li>
+                  <li>Check applicable regulatory requirements with State AYUSH Licensing Authority or FSSAI.</li>
+                  <li>Consult a qualified IP professional and AYUSH regulatory advisor when required.</li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- 4. SOURCES SECTION -->
+            <div class="sources-section">
+              <div class="sources-header-row">
+                <div class="sources-title">
+                  <span>📚</span>
+                  <span data-i18n="sourcesTitle">Authoritative Reference Sources</span>
+                </div>
+                <span class="sources-demo-tag">Sample Reference Matrix • Verified Statutory Authorities</span>
+              </div>
+              <div id="sourcesGrid" class="sources-grid">
+                <!-- Dynamically populated clickable source cards -->
+              </div>
+            </div>
+
+            <!-- Response Actions Bar -->
+            <div class="response-actions">
+              <button id="resetQueryBtn" class="action-btn">
+                <span>🔄</span>
+                <span>New Question</span>
+              </button>
+              <button id="copyBtn" class="action-btn">
+                <span>📋</span>
+                <span>Copy Sahayak Report</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. IPR GUIDE SECTION -->
+    <section id="guideSection" class="guide-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ayurveda IP Knowledge Hub</span>
+          <h2 class="section-title">Intellectual Property Rights for Ayurveda</h2>
+          <p class="section-subtitle">A comprehensive breakdown of legal instruments protecting Ayurvedic discoveries, heritage remedies, branding, and biodiversity.</p>
+        </div>
+
+        <!-- Search / Filter IPR Guides -->
+        <div class="guide-search-filter">
+          <span class="guide-search-icon">🔍</span>
+          <input type="text" id="guideSearchInput" class="guide-search-input" placeholder="Filter IPR topics (e.g., Patent, Traditional Knowledge, ABS, Trademark)..." aria-label="Search IPR guides">
+        </div>
+
+        <!-- IPR Cards Grid -->
+        <div id="iprCardsGrid" class="ipr-cards-grid">
+          <!-- Dynamically populated from IPR_DATA.iprGuides -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PRODUCT CLASSIFICATION WIZARD SECTION -->
+    <section id="classifySection" class="classify-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Regulatory Screener</span>
+          <h2 class="section-title" data-i18n="classifyTitle">Product Classification Wizard</h2>
+          <p class="section-subtitle" data-i18n="classifySubtitle">Step-by-step regulatory category screening under Ministry of Ayush and FSSAI frameworks.</p>
+        </div>
+
+        <div class="wizard-wrapper">
+          <!-- Progress Steps Header -->
+          <div class="wizard-progress">
+            <div class="progress-step active" data-step-indicator="1">
+              <div class="step-circle">1</div>
+              <span class="step-label">Product Type</span>
+            </div>
+            <div class="progress-step" data-step-indicator="2">
+              <div class="step-circle">2</div>
+              <span class="step-label">Main Use</span>
+            </div>
+            <div class="progress-step" data-step-indicator="3">
+              <div class="step-circle">3</div>
+              <span class="step-label">Classical Basis</span>
+            </div>
+            <div class="progress-step" data-step-indicator="4">
+              <div class="step-circle">4</div>
+              <span class="step-label">Target Market</span>
+            </div>
+          </div>
+
+          <!-- Wizard Step 1: What is your product? -->
+          <div class="wizard-step-content active" data-step="1">
+            <h3 class="step-question-title">Step 1: What is your product?</h3>
+            <p class="step-question-desc">Select the physical form and formulation structure of your innovation.</p>
+            <div class="options-grid" data-step="1">
+              <div class="option-card selected" data-val="formulation">
+                <div class="option-title"><span>💊</span> Polyherbal Formulation</div>
+                <div class="option-desc">Capsule, tablet, churna, kwath, or syrup containing multiple synergistic botanicals.</div>
+              </div>
+              <div class="option-card" data-val="extract">
+                <div class="option-title"><span>🧪</span> Standardized Single Extract</div>
+                <div class="option-desc">Concentrated active herbal extract (e.g. 5% Withanolides or 95% Curcuminoids).</div>
+              </div>
+              <div class="option-card" data-val="topical">
+                <div class="option-title"><span>🧴</span> Topical Oil, Cream or Serum</div>
+                <div class="option-desc">Taila, Lepa, face serum, herbal shampoo, or dermal balm applied externally.</div>
+              </div>
+              <div class="option-card" data-val="food">
+                <div class="option-title"><span>🍵</span> Herbal Food / Dietary Tea</div>
+                <div class="option-desc">Nutritive herbal beverage, botanical confectionery, or health cereal.</div>
+              </div>
+              <div class="option-card" data-val="device">
+                <div class="option-title"><span>⚙️</span> Ayurvedic Therapy Device</div>
+                <div class="option-desc">Hardware instrument (e.g., automated Panchakarma Shirodhara dispenser or diagnostic kit).</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Step 2: What is its main use? -->
+          <div class="wizard-step-content" data-step="2">
+            <h3 class="step-question-title">Step 2: What is its main use?</h3>
+            <p class="step-question-desc">What is the primary therapeutic or commercial claim made on your labeling?</p>
+            <div class="options-grid" data-step="2">
+              <div class="option-card selected" data-val="therapeutic">
+                <div class="option-title"><span>🩺</span> Therapeutic Disease Treatment</div>
+                <div class="option-desc">Management, mitigation, or cure of specific disorders (e.g. Diabetes, Arthritis, Hypertension).</div>
+              </div>
+              <div class="option-card" data-val="wellness">
+                <div class="option-title"><span>💪</span> Rasayana & General Immunity</div>
+                <div class="option-desc">General rejuvenation, vitality, adaptogenic stress resilience, and digestive wellness.</div>
+              </div>
+              <div class="option-card" data-val="cosmetic">
+                <div class="option-title"><span>✨</span> Cosmetic / Skin & Hair Care</div>
+                <div class="option-desc">Cleansing, beautifying, promoting complexion (Varnya), or conditioning hair without curing diseases.</div>
+              </div>
+              <div class="option-card" data-val="dietary">
+                <div class="option-title"><span>🥗</span> Daily Dietary Nutrition</div>
+                <div class="option-desc">Providing nutritional balance in accordance with Ayurvedic ahara-vidhi principles.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Step 3: Classical text reference? -->
+          <div class="wizard-step-content" data-step="3">
+            <h3 class="step-question-title">Step 3: Is the formulation based on an existing classical Ayurvedic text?</h3>
+            <p class="step-question-desc">Check against treatises listed in the First Schedule of the Drugs & Cosmetics Act 1940.</p>
+            <div class="options-grid" data-step="3">
+              <div class="option-card selected" data-val="yes">
+                <div class="option-title"><span>📖</span> Classical Shastriya Formula</div>
+                <div class="option-desc">Exact recipe mentioned in authoritative classical texts (Charaka, Sushruta, Ashtanga Hridaya, AFI).</div>
+              </div>
+              <div class="option-card" data-val="modified">
+                <div class="option-title"><span>🔬</span> Modified Classical Composition</div>
+                <div class="option-desc">Based on classical herbs but incorporating modern dosage formats, excipients, or delivery vehicles.</div>
+              </div>
+              <div class="option-card" data-val="no">
+                <div class="option-title"><span>💡</span> Novel Proprietary Combination</div>
+                <div class="option-desc">Innovative combination of herbs not explicitly paired in any single ancient treatise.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Step 4: Select target market -->
+          <div class="wizard-step-content" data-step="4">
+            <h3 class="step-question-title">Step 4: Select target market</h3>
+            <p class="step-question-desc">Regulatory and labeling laws diverge sharply between Indian and foreign jurisdictions.</p>
+            <div class="options-grid" data-step="4">
+              <div class="option-card selected" data-val="india">
+                <div class="option-title"><span>🇮🇳</span> India Domestic Market</div>
+                <div class="option-desc">Governed by Ministry of Ayush, State Licensing Authorities, and FSSAI.</div>
+              </div>
+              <div class="option-card" data-val="international">
+                <div class="option-title"><span>🌎</span> International / Export</div>
+                <div class="option-desc">Export to USA (US FDA DSHEA), European Union (EMA Herbal Monographs), UK, or Middle East.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step Navigation Buttons -->
+          <div class="wizard-nav-buttons">
+            <button id="wizardPrevBtn" class="btn-secondary" style="visibility: hidden;">← Back</button>
+            <button id="wizardNextBtn" class="btn-primary">Continue to Step 2 →</button>
+          </div>
+
+          <!-- Step 5: Classification Result Box -->
+          <div id="wizardResult" class="classification-result">
+            <div class="result-card-banner">
+              <div class="result-tagline">Preliminary Regulatory Determination</div>
+              <h3 id="resCategoryTitle" class="result-category-title">Ayurvedic Proprietary Medicine</h3>
+              <div id="resAuthority" class="result-category-authority">State AYUSH Licensing Authority (Drugs & Cosmetics Act 1940)</div>
+            </div>
+
+            <div class="result-details-grid">
+              <div class="result-detail-item">
+                <div class="result-detail-label">Mandatory License Form</div>
+                <div id="resLicense" class="result-detail-value">Form 25-D under Rule 158-B</div>
+              </div>
+              <div class="result-detail-item">
+                <div class="result-detail-label">Required Safety Testing</div>
+                <div id="resTesting" class="result-detail-value">Heavy metals, pesticide residues, microbial load, aflatoxins, shelf-life stability.</div>
+              </div>
+              <div class="result-detail-item">
+                <div class="result-detail-label">IP Protection Strategy</div>
+                <div id="resIP" class="result-detail-value">Brand Trademark (Class 5). Patent possible only if non-obvious synergistic efficacy is proven.</div>
+              </div>
+              <div class="result-detail-item">
+                <div class="result-detail-label">Traditional Knowledge Basis</div>
+                <div id="resTK" class="result-detail-value">Botanical ingredients must be listed in Ayurvedic Pharmacopoeia of India (API).</div>
+              </div>
+            </div>
+
+            <div style="background: #fffbeb; border: 1px solid #fef3c7; border-radius: var(--radius-sm); padding: 0.9rem; font-size: 0.84rem; color: #92400e; margin-bottom: 1.5rem;">
+              <strong>Disclaimer:</strong> This classification is algorithmic prototype guidance based on AYUSH & FSSAI published schedules. A formal determination requires filing an application with your State Licensing Authority (SLA).
+            </div>
+
+            <div style="text-align: center;">
+              <button id="resetWizardBtn" class="btn-secondary">🔄 Screen Another Product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DASHBOARD-STYLE RESULT SECTION -->
+    <section id="dashboardSection" class="dashboard-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Compliance Matrix</span>
+          <h2 class="section-title">Ayurveda IP & Regulatory Dashboard</h2>
+          <p class="section-subtitle">Real-time status overview across Intellectual Property, AYUSH Regulatory, Traditional Knowledge, and Actionable Steps.</p>
+        </div>
+
+        <!-- Case Study Selector -->
+        <div class="case-study-selector">
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--primary); margin-right: 0.5rem;">Select Demo Innovation Case:</span>
+          <button class="case-btn active" data-case="case1">Case 1: Diabetic Herbal Capsule</button>
+          <button class="case-btn" data-case="case2">Case 2: Classical Chyawanprash Export</button>
+          <button class="case-btn" data-case="case3">Case 3: Anti-Acne Herbal Serum</button>
+        </div>
+
+        <!-- Four Dashboard Cards -->
+        <div class="dashboard-grid">
+          <!-- Card 1: IP Protection -->
+          <div class="dash-card" id="dashCardIP">
+            <div>
+              <div class="dash-card-header">
+                <h3 class="dash-card-title"><span>🛡️</span> IP Protection</h3>
+                <span class="status-badge requires-review">REQUIRES REVIEW</span>
+              </div>
+              <div class="dash-card-body">
+                <div class="dash-card-main-text">Patent & Trademark (Class 5)</div>
+                <div class="dash-card-desc">Section 3(p) exclusion applies for known herbs. Synergy data required to prove non-obvious therapeutic benefit.</div>
+                <ul class="dash-checklist">
+                  <li><span class="dash-checklist-check">✓</span> Prior art search conducted on TKDL database</li>
+                  <li><span class="dash-checklist-check">✓</span> Empirical in-vitro synergy test documented</li>
+                  <li><span class="dash-checklist-check">✓</span> Trademark brand search for coined name</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dash-card-footer">
+              <span>Authority: IP India (CGPDTM)</span>
+              <span>Ref: Patents Act §3(p)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Regulatory -->
+          <div class="dash-card" id="dashCardReg">
+            <div>
+              <div class="dash-card-header">
+                <h3 class="dash-card-title"><span>📋</span> Regulatory</h3>
+                <span class="status-badge requires-review">REQUIRES REVIEW</span>
+              </div>
+              <div class="dash-card-body">
+                <div class="dash-card-main-text">State AYUSH Licensing Authority</div>
+                <div class="dash-card-desc">Requires Form 25-D manufacturing application with proof of textual safety for all botanical ingredients.</div>
+                <ul class="dash-checklist">
+                  <li><span class="dash-checklist-check">✓</span> Pharmacopoeial API limits validated</li>
+                  <li><span class="dash-checklist-check">✓</span> Heavy metal batch release testing scheduled</li>
+                  <li><span class="dash-checklist-check">✓</span> GMP Schedule T compliance verified</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dash-card-footer">
+              <span>Framework: Drugs & Cosmetics Act</span>
+              <span>Rule 158-B</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Traditional Knowledge -->
+          <div class="dash-card" id="dashCardTK">
+            <div>
+              <div class="dash-card-header">
+                <h3 class="dash-card-title"><span>🌱</span> Traditional Knowledge</h3>
+                <span class="status-badge not-verified">ACTION NEEDED</span>
+              </div>
+              <div class="dash-card-body">
+                <div class="dash-card-main-text">Biological Diversity Act (Section 6)</div>
+                <div class="dash-card-desc">Formulation sources biological resources from Indian forests/farms. Mandatory NBA Form III filing before patent grant.</div>
+                <ul class="dash-checklist">
+                  <li><span class="dash-checklist-check">✓</span> TKDL cited texts mapped (Charaka Chikitsa 6)</li>
+                  <li><span class="dash-checklist-check">✓</span> NBA Form III application pending clearance</li>
+                  <li><span class="dash-checklist-check">✓</span> State Biodiversity Board (SBB) intimation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dash-card-footer">
+              <span>Entity: National Biodiversity Authority</span>
+              <span>ABS Clearance</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Next Steps -->
+          <div class="dash-card" id="dashCardNext">
+            <div>
+              <div class="dash-card-header">
+                <h3 class="dash-card-title"><span>🎯</span> Next Steps</h3>
+                <span class="status-badge verified">VERIFIED</span>
+              </div>
+              <div class="dash-card-body">
+                <div class="dash-card-main-text">4-Phase Action Plan</div>
+                <div class="dash-card-desc">Sequential execution path to secure intellectual property rights and regulatory clearances without infringement risk.</div>
+                <ul class="dash-checklist">
+                  <li><span class="dash-checklist-check">✓</span> 1. Complete synergy validation tests</li>
+                  <li><span class="dash-checklist-check">✓</span> 2. Submit Form III to NBA</li>
+                  <li><span class="dash-checklist-check">✓</span> 3. File AYUSH Form 25-D with SLA</li>
+                  <li><span class="dash-checklist-check">✓</span> 4. Register trademark prior to launch</li>
+                </ul>
+              </div>
+            </div>
+            <div class="dash-card-footer">
+              <span>Timeline: ~6 to 12 Months</span>
+              <span>Priority: High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ABOUT SECTION -->
+    <section id="aboutSection" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">About The Initiative</span>
+            <h2>Bridging Ancient Ayurvedic Wisdom & Modern IP Law</h2>
+            <p>India's Ayurvedic heritage spans over five millennia. However, traditional knowledge systems often face modern intellectual property hurdles — from biopiracy risks and patent exclusions under Section 3(p), to intricate licensing pathways under Chapter IV-A of the Drugs and Cosmetics Act.</p>
+            <p><strong>IP-SAKTI Sahayak</strong> is engineered to serve as an intelligent, transparent bridge for innovators, startups, and researchers. By providing source-cited, structured answers, it accelerates legal literacy while upholding the sacred public-domain heritage of Indian traditional medicine.</p>
+            
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon">⚖️</div>
+                <div class="pillar-content">
+                  <h4>Statutory Accuracy</h4>
+                  <p>Grounding guidance in authentic provisions from IP India, Ministry of Ayush, and TKDL.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">🛡️</div>
+                <div class="pillar-content">
+                  <h4>Defensive Heritage Protection</h4>
+                  <p>Preventing biopiracy by honoring classical Sanskrit treatises and community biodiversity rights.</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-icon">🚀</div>
+                <div class="pillar-content">
+                  <h4>Startup Acceleration</h4>
+                  <p>Enabling Ayurvedic D2C brands, doctors, and scientists to plan compliance roadmaps proactively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual-card">
+            <div class="quote-box">
+              <div class="quote-title">"Protecting Ancient Wisdom, Enabling Modern Innovation"</div>
+              <div class="quote-desc">
+                Traditional knowledge is not an impediment to innovation — it is the bedrock upon which modern, evidence-based phytopharmaceuticals and holistic wellness can lead the global healthcare renaissance.
+              </div>
+              <div class="quote-author">
+                IP-SAKTI Sahayak • Dedicated to India's Traditional Medicine Vanguard
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Detail Modal for Sources and IPR Topics -->
+  <div id="sourceModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle" class="modal-title">Source Detail</h3>
+        <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-field">
+          <div class="modal-field-label">Authority / Agency</div>
+          <div id="modalAuthority" class="modal-field-content"></div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Jurisdiction</div>
+          <div id="modalJurisdiction" class="modal-field-content"></div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Regulatory / IP Domain</div>
+          <div id="modalDomain" class="modal-field-content"></div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Institutional Role & Summary</div>
+          <div id="modalSummary" class="modal-field-content" style="white-space: pre-line;"></div>
+        </div>
+        <div class="modal-field">
+          <div class="modal-field-label">Statutory & Legal Basis</div>
+          <div id="modalLegalBasis" class="modal-field-content"></div>
+        </div>
+        <div>
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-link-btn">
+            Visit Official Portal ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. PERMANENT SAFETY RULES & FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Permanent Legal Disclaimer Card as specified in Prompt -->
+      <div class="footer-disclaimer-card">
+        <div class="disclaimer-card-title">
+          <span>⚠️</span>
+          <span>Permanent Statutory Disclaimer</span>
+        </div>
+        <p class="disclaimer-card-text">
+          IP-SAKTI Sahayak provides informational guidance based on referenced sources and does not provide legal advice. Always verify applicable laws and consult a qualified professional where necessary. Never display fabricated laws, regulations, legal sections, certificates, patents or government information.
+        </p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span>🌿</span> IP-SAKTI Sahayak</h3>
+          <p class="footer-tagline">Your AI Guide for Ayurveda, Intellectual Property & Regulatory Compliance. Empowering researchers and entrepreneurs with transparent legal insights.</p>
+          <div class="footer-badge-list">
+            <span class="footer-badge">Ministry of Ayush Aligned</span>
+            <span class="footer-badge">TKDL Aware</span>
+            <span class="footer-badge">Patents Act §3(p)</span>
+            <span class="footer-badge">Biological Diversity Act</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#askSection">Ask Sahayak</a></li>
+            <li><a href="#guideSection">IPR Guide</a></li>
+            <li><a href="#classifySection">Product Classification</a></li>
+            <li><a href="#dashboardSection">Compliance Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Statutory Bodies</h4>
+          <ul class="footer-links">
+            <li><a href="https://ipindia.gov.in" target="_blank" rel="noopener noreferrer">IP India (CGPDTM) ↗</a></li>
+            <li><a href="https://ayush.gov.in" target="_blank" rel="noopener noreferrer">Ministry of Ayush ↗</a></li>
+            <li><a href="https://www.tkdl.res.in" target="_blank" rel="noopener noreferrer">TKDL (CSIR) ↗</a></li>
+            <li><a href="http://nbaindia.org" target="_blank" rel="noopener noreferrer">National Biodiversity Authority ↗</a></li>
+            <li><a href="https://www.wipo.int/tk/en/" target="_blank" rel="noopener noreferrer">WIPO Traditional Knowledge ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Governance & Ethics</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Defensive Publication</a></li>
+            <li><a href="#home">Anti-Biopiracy Standards</a></li>
+            <li><a href="#home">Ethical AI Transparency</a></li>
+            <li><a href="#home">Schedule T GMP Guidelines</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 IP-SAKTI Sahayak. Prototype Frontend for Ayurveda IPR & Regulatory Evaluation.</div>
+        <div>Built for Ayurveda Startups, Practitioners & IP Researchers</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
